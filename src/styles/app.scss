@@ -1,5 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Ubuntu:ital,wght@0,400;1,500&display=swap");
+
 @import "./reset";
+@import "./variables";
+
+:root {
+  --color-primary-a0: #ffffff;
+  --color-primary-a10: #d7f3fb;
+  --color-primary-a20: #ace6f8;
+  --color-primary-a30: #7bd9f4;
+  --color-primary-a50: #2bccf0;
+  --color-primary-a60: #2c95ae;
+  --color-primary-a70: #256170;
+  --color-primary-a80: #1a3238;
+  --color-primary-a90: #000000;
+
+  --font-primary: "Ubuntu", sans-serif;
+  --font-secoundary: "Kalam", cursive;
+}
 
 body {
-  background-color: #a3b2ae;
+  font-family: var(--font-primary);
+  background-color: var(--color-primary-a70);
 }
