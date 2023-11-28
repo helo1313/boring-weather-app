@@ -1,0 +1,25 @@
+.searchBar {
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.searchBar_input {
+  width: 80%;
+  margin: 2%;
+  padding: 0.25rem 5%;
+
+  border-radius: 1.5rem;
+  border: 1px solid black;
+
+  font-size: 2rem;
+
+  transition: 300ms;
+
+  &:focus {
+    width: 100%;
+
+    border-radius: 1rem;
+  }
+}
