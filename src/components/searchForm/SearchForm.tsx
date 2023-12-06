@@ -22,12 +22,18 @@ const SearchForm: React.FC = () => {
   };
 
   return (
-    <form className={classes.searchForm} onSubmit={handleSubmit}>
-      <input className={classes.searchForm_input} type="text" ref={inputRef} />
-      <button className={classes.searchForm_button} type="submit">
-        <FaSearch />
-      </button>
-    </form>
+    <div className={classes.wrapper}>
+      <form className={classes.searchForm} onSubmit={handleSubmit}>
+        <input
+          className={classes.searchForm_input}
+          type="text"
+          ref={inputRef}
+        />
+        <button className={classes.searchForm_button} type="submit">
+          <FaSearch />
+        </button>
+      </form>
+    </div>
   );
 };
 
