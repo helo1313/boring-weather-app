@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 
-import SearchBar from "@/components/searchBar/searchBar";
-import Footer from "@/components/footer/footer";
-import Introduction from "@/components/introduction/introduction";
+import Footer from "@/components/footer/Footer";
+import Introduction from "@/components/introduction/Introduction";
+import SearchForm from "@/components/searchForm/SearchForm";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <main>
         <Introduction />
-        <SearchBar />
+        <SearchForm />
         <Footer>
           If you really entered here to check the weather then LOL.
         </Footer>

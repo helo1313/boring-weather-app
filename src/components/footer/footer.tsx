@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
 
-import classes from "./footer.module.scss";
+import classes from "./Footer.module.scss";
 
 const Footer: React.FC<PropsWithChildren> = ({ children }) => {
   return <footer className={classes.footer}>{children}</footer>;
