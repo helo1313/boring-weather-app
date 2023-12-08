@@ -6,18 +6,16 @@ import Details from "./Details";
 import WeatherData from "@/utils/interfaces/WeatherData";
 
 import classes from "./WeatherCard.module.scss";
+import getWeatherImage from "@/utils/functions/getWeatherImage";
 
 const WeatherCard = (props: PropsWithChildren<WeatherData>) => {
+  const imageURL = getWeatherImage(props.weather!);
+
   return (
     <Card>
-      <h1 className={classes.cityName}>{props.name}</h1>
       <div className={classes.temperatureWrapper}>
-        <Image
-          src={"/Images/clear.png"}
-          alt="weather image"
-          width={100}
-          height={100}
-        />
+        <h1 className={classes.cityName}>{props.name}</h1>
+        <Image src={imageURL} alt="weather image" width={170} height={170} />
         <p className={classes.temperature}>{props.temperature}</p>
       </div>
       <Details {...props} />
